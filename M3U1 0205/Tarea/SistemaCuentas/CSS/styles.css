@@ -1,0 +1,187 @@
+/* Index Css */
+
+.servicio{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  gap: 32px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicio:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.servicio h4{
+  color: #2e64a1;
+  font-weight: 500;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+.servicio p{
+  font-size: 15px;
+  text-align: justify;
+  color: #2e64a1;
+}
+
+.servicio img{
+  border-radius: 13px;
+  display: block;
+  max-width: 225px;
+}
+
+.servicio:nth-child(odd){
+  flex-direction: row-reverse;
+}
+
+
+/* fin Index Css */
+
+
+/* Login Css */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: #727bff;
+}
+
+.holder {
+  margin: 20px;
+  max-width: 960px;
+  border-bottom: 5px solid black;
+}
+
+header img{
+  max-width: 100px;
+  border-radius: 25%;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 50px;
+  display: inline-block;
+}
+
+header h6{
+  font-size: 25px;
+  font-style: italic;
+}
+
+nav{
+  background-color: white;/* 
+  margin-bottom: 20px; */
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  flex-grow: 1;
+}
+
+nav ul li a{
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block;
+  text-align: center;
+}
+
+nav ul li a:hover{
+  background-color: rgba(41,47,255,0.8);
+  color: white;
+}
+
+nav ul li a.activo{
+  background-color: rgba(41,47,255,0.8);
+  color: white;
+}
+
+main{
+  padding: 20px;
+  background-color: #727bff;
+}
+
+.contenedor {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.contenedor h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -5px;
+  font-style: italic;
+}
+
+.form-control{
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #727bff;
+}
+
+
+/* Fin Login Css */
+
+/* Tabla de Gastos Css */
+
+/* Fin Tabla de Gastos Css */
+
+@media screen and (max-width: 390px) {
+
+  .servicio{
+    display: block;
+  }
+
+  .servicio img{
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .servicio h4{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  
+}
