@@ -41,9 +41,236 @@
   flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 600px) {
+
+  .servicio {
+    display: block;
+  }
+
+  .servicio img {
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .servicio h4 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+}
 
 /* fin Index Css */
 
+/* inicio Planes */
+
+.container div{
+  display: flex;
+}
+
+.planes {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.card:hover{
+  background-color: #d6d6d6;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+
+}
+
+.tipo {
+  display: block;
+  text-align: center;
+}
+
+.tipo h3 {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
+  margin: 10px 10px;
+  align-content: center;
+  border-bottom: 1px solid;
+}
+
+.tipo img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.tipo p {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.detalle {
+  margin: 10px;
+}
+
+.detalle ul {
+  list-style: none;
+}
+
+.detalle ul li {
+  color: rgba(128, 128, 128, 0.55);
+}
+
+.detalle .basico {
+  /*   color: #ff0000; */
+  font-weight: bold;
+  color: black;
+}
+
+
+
+.detalle .basico::before {
+  content: "\2714";
+
+}
+
+.detalle .estandar {
+  /*   color: #ff0000; */
+  font-weight: bold;
+  color: black;
+}
+
+.detalle .estandar::before {
+  content: "\2714";
+
+}
+
+.detalle .premium {
+  /*   color: #ff0000; */
+  font-weight: bold;
+  color: black;
+}
+
+.detalle .premium::before {
+  content: "\2714";
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .planes{
+    flex-direction: column;
+  }
+  
+}
+
+/* fin Planes */
+
+
+
+/* inicio Contacto */
+
+.contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 75%;
+  background-color: white;
+}
+
+.form div input,
+textarea {
+  resize: none;
+  width: 125%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.medios ul li{
+  list-style: none;
+}
+
+.medios ul li::before{
+  content: "\2714";
+}
+
+.imagenRedes{
+  position: relative;
+  left: 50px;
+}
+.imagenRedes img{
+  border-radius: 50%;
+}
+
+/* .form div input[type="submit"] {
+  width: auto;
+  border-radius: 0;
+  background-color: #009005;
+} */
+
+/* .form div input[type="submit"]:hover {
+  width: auto;
+  border-radius: 0;
+  background-color: #005503;
+} */
+
+@media screen and (max-width:600px) {
+
+
+  header .holder{
+    max-width: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .holder img{
+    max-width: none;
+    width: 200px;
+  }
+
+  .holder h1{
+    text-align: center;
+  }
+
+  .formulario {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form div input,
+textarea {
+  width: 100%;
+}
+
+.imagenRedes{
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenRedes img{
+  width: 75%;
+}
+
+
+
+  
+}
+
+/* fin Contacto */
 
 /* Login Css */
 
@@ -170,174 +397,3 @@ footer {
 
 /* Fin Login Css */
 
-
-@media screen and (max-width: 390px) {
-
-  .servicio {
-    display: block;
-  }
-
-  .servicio img {
-    align-content: center;
-    margin: 0 auto;
-  }
-
-  .servicio h4 {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-
-}
-
-
-/* inicio Contacto */
-
-.contacto {
-  display: flex;
-  justify-content: center;
-}
-
-.formulario {
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 20px;
-  width: 75%;
-  background-color: white;
-}
-
-.form div input,
-textarea {
-  resize: none;
-  width: 125%;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.medios ul li{
-  list-style: none;
-}
-
-.medios ul li::before{
-  content: "\2714";
-}
-
-.imagenRedes{
-  position: relative;
-  left: 50px;
-}
-.imagenRedes img{
-  border-radius: 50%;
-}
-
-/* .form div input[type="submit"] {
-  width: auto;
-  border-radius: 0;
-  background-color: #009005;
-} */
-
-/* .form div input[type="submit"]:hover {
-  width: auto;
-  border-radius: 0;
-  background-color: #005503;
-} */
-
-/* fin Contacto */
-
-/* inicio Planes */
-
-.planes {
-  display: flex;
-  justify-self: center;
-}
-
-.card {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid;
-}
-
-.card:hover{
-  background-color: #d6d6d6;
-  transform: scale(1.05);
-  transition-duration: 0.5s;
-
-}
-
-.tipo {
-  display: block;
-  text-align: center;
-}
-
-.tipo h3 {
-  font-size: 2em;
-  font-style: italic;
-  font-weight: bold;
-  margin: 10px 10px;
-  align-content: center;
-  border-bottom: 1px solid;
-}
-
-.tipo img {
-  width: 150px;
-  border-radius: 50%;
-  margin: 10px;
-}
-
-.tipo p {
-  font-size: 2em;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.detalle {
-  margin: 10px;
-}
-
-.detalle ul {
-  list-style: none;
-}
-
-.detalle ul li {
-  color: rgba(128, 128, 128, 0.55);
-}
-
-.detalle .basico {
-  /*   color: #ff0000; */
-  font-weight: bold;
-  color: black;
-}
-
-
-
-.detalle .basico::before {
-  content: "\2714";
-
-}
-
-.detalle .estandar {
-  /*   color: #ff0000; */
-  font-weight: bold;
-  color: black;
-}
-
-.detalle .estandar::before {
-  content: "\2714";
-
-}
-
-.detalle .premium {
-  /*   color: #ff0000; */
-  font-weight: bold;
-  color: black;
-}
-
-.detalle .premium::before {
-  content: "\2714";
-
-}
-
-/* fin Planes */
