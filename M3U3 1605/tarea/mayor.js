@@ -32,7 +32,6 @@ function comprobar() {
         document.write('el mayor es el ' + num3);
     }
 
-
 }
 
 comprobar();
