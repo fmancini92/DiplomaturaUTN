@@ -22,13 +22,14 @@
         const lista = document.getElementById('lista');
         /**
          * los eventos de la lista recorren para todos los hijos
-         * en este caso queremos que se cliquee  cualquier <a> adentro de la lista y como los vamos a agregar y remover dinamicamente no es practico
+         * en este caso queremos que se cliquee  cualquier <a> adentro de la lista y 
+         * como los vamos a agregar y remover dinamicamente no es practico
          * asignar un listener a cada <a>
          * 
          */
             
         lista.addEventListener('click', function(e) {
-            console.log('click en lista');
+            console.log('click en X');
             // checkear si se clickeo un <a>
             if(e.target.nodeName.toLowerCase() === 'a') {
                 e.preventDefault();
@@ -42,6 +43,8 @@
          */
         const agregar = document.getElementsByClassName('agregar')[0];
 
+        console.log(agregar);
+
         function agregarElemento(e) {
             e.preventDefault();
             // creamos el elemento
@@ -53,12 +56,13 @@
             // sin el href no lo muestra como link
             x.href = '#';
             x.innerText = 'X';
+            
+            // agregamos el <li> al <ul>
+            lista.appendChild(nuevo);
 
             // agregamos el <a> al <li>
             nuevo.appendChild(x);
 
-            // agregamos el <li> al <ul>
-            lista.appendChild(nuevo);
         }
 
         // podemos pasar una funcion en vez de definirla de forma anonima

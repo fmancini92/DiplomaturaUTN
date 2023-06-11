@@ -20,8 +20,11 @@
             <p>parrafo 1 de la caja 2</p>
         </div>
     </div>
-    <p>parrafo 1 afuera</p>
-    <p>pararfo 2 afuera</p>
+
+    <div id="caja3" style="border: solid green 3px;">
+        <p>parrafo 1 afuera</p>
+        <p>pararfo 2 afuera</p>
+    </div>
 
     <button onclick="todosLosParrafos();">
         muestra todos los elementos p en el documento</button>
@@ -32,11 +35,16 @@
     <button onclick="caja2ParaElems();">
         muestra todos los elementos p en div2</button>
 
+    <button onclick="caja3ParaElems();">
+        muestra los p de caja 3</button>
+
     <script>
         function todosLosParrafos() {
             const allParafos = document.getElementsByTagName("p");
+            console.log(allParafos);
 
             const num = allParafos.length;
+            console.log(num);
 
             alert(`Hay ${num}  elementos <p> en este documento`);
         }
@@ -57,6 +65,15 @@
             var num = caja2parraf.length;
 
             alert(`Hay ${num} elementos <p> en caja2`);
+        }
+
+        function caja3ParaElems(){
+            var caja3 = document.getElementById("caja3")
+            var caja3parraf = caja3.getElementsByTagName("p");
+
+            var num = caja3parraf.length;
+
+            alert(`Hay ${num} elementos <p> en caja3`)
         }
 
     </script>
