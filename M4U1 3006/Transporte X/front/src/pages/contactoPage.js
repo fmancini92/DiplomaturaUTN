@@ -1,9 +1,10 @@
 import React from "react";
+import '../styles/components/pages/contactoPage.css'
 
 const ContactoPage = (props) =>{
     return (
         <main>
-            <div>
+            <div className="form"> 
                 <h2>Contacto Rapido</h2>
                 <form action="" method="" className="formulario">
                     <p>
@@ -19,8 +20,11 @@ const ContactoPage = (props) =>{
                         <input type="text" name="" id=""/>
                     </p>
                     <p>
-                        <label for="nombre">Nombre</label>
+                        <label for="">Mensaje</label>
                         <textarea name=""></textarea>
+                    </p>
+                    <p>
+                        <input type="submit"/>
                     </p>
                 </form>
             </div>
